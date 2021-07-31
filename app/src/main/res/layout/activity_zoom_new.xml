@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.ng.nguilib.layout.ZoomLayout4
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dd12"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        app:IntervalLineColor="@color/interval_line">
+
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:minWidth="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_icon" />
+
+        </RelativeLayout>
+
+
+        <com.ng.nguilib.layout.ZoomLayout4
+            android:id="@+id/right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dd10"
+            android:layout_toRightOf="@id/left_layout"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#51000000"
+                android:gravity="center"
+                android:minWidth="10dp"
+                android:layout_toLeftOf="@id/right"
+                android:text="left"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/right"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dd10"
+                android:background="#51000000"
+                android:gravity="center"
+                android:minWidth="10dp"
+                android:text="center"
+                android:textColor="@color/white" />
+        </com.ng.nguilib.layout.ZoomLayout4>
+
+
+    </com.ng.nguilib.layout.ZoomLayout4>
+
+
+
+</RelativeLayout>

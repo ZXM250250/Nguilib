@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+/app/gradle/wrapper/gradle-wrapper.properties
+/app/local.properties
+/app/gradlew
+/app/gradlew.bat
+/app/gradle/wrapper/gradle-wrapper.jar
+/.idea/

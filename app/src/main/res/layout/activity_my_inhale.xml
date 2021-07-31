@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mTipContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:visibility="gone"
+            android:textSize="8sp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginRight="@dimen/dd50"
+            android:layout_alignParentRight="true"
+            android:text="目标" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="test" />
+</LinearLayout>
+

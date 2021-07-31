@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ng.ui">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name="com.ng.ui.show.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--main test-->
+        <activity android:name=".test.TestActivityK" >
+        </activity>
+
+        <!--training-->
+        <activity android:name=".other.gesture.testjava" />
+
+        <!--test-->
+        <activity android:name=".other.inhale.InhaleAnimationActivity" />
+        <activity android:name=".other.textview.TestTxtActivity" />
+        <activity android:name=".other.print.TestPrintTextViewActivity" />
+        <activity android:name=".other.gesture.TestGuochangAty" />
+        <activity android:name=".other.zhuanli.TestLineMorphingDrawableActivity" />
+        <activity android:name=".other.parrot.NgTestAty" />
+        <activity android:name=".other.zoom.ZoomActivity" >
+        </activity>
+        <activity android:name=".other.drag.DragActivity" />
+        <activity android:name=".other.percentcircle.PercentCircleActivity" />
+        <activity android:name=".other.twobtn.TwoCheckTestActivity">
+
+        </activity>
+        <!--study-->
+        <activity android:name=".study.inhale.InhaleStudyActivity" />
+        <activity android:name=".other.zhuanli.my.MyAnimStudyActivity" />
+        <activity android:name=".study.animbase.AnimBaseActivity" />
+        <activity android:name=".study.region.RegionTestActivity" />
+        <activity android:name=".study.rotate.RotateTestActivity" />
+        <activity android:name=".study.rotate.RotateXyzTestActivity" />
+        <activity android:name=".study.clock.ClockTestActivity" />
+        <activity android:name=".study.explode.ExplodeTestActivity" />
+
+    </application>
+
+</manifest>
